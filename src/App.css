@@ -43,3 +43,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+Card{
+  height: 900px;
+  
+}

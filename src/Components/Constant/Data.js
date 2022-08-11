@@ -32,7 +32,7 @@ export const moviesData = [
     {
         id: 4,
         title: "Fast and Furious",
-        rate: 3,
+        rate: 2,
         description:
             "Fast and Furious ou Rapides et Dangereux au Québec, (The Fast and the Furious), est un film américano-allemand réalisé par Rob Cohen, sorti en 2001.",
         posterUrl:
