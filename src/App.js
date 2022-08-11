@@ -14,13 +14,17 @@ function App() {
   }
 
   const [inputSearch, setInputSearch] = useState("")
+  const [rating , setRating] = useState(1)
 
+  const handleRating= (number) => {
+    setRating(number)
+  }
 
   return (
     <div className="App">
        
-      <FilterByName inputSearch={inputSearch} setInputSearch={setInputSearch}/>  
-      <MovieList movies={movies} inputSearch={inputSearch}/>
+      <FilterByName inputSearch={inputSearch} setInputSearch={setInputSearch}  handleRating={handleRating}/>  
+      <MovieList movies={movies} inputSearch={inputSearch} rating={rating} setRating={setRating}/>
       <AddMovie add={add}/>
     </div>
   );

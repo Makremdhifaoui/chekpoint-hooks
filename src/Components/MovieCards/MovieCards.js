@@ -12,8 +12,9 @@ const MovieCards = ({movie}) => {
     <Card.Title>{movie.title}</Card.Title>
     <Card.Text>{movie.description}</Card.Text>
     <StarRatingComponent
-      name='movie rating' /* name of the radio input, it is required */
+      name={`str${movie.id}`} /* name of the radio input, it is required */
       value={movie.rate}
+      editing={false}
     /> <br />
     <Button href={movie.trailer} target={"blanck"}>Trailer</Button>
   </Card.Body>
